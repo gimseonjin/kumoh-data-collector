@@ -177,10 +177,5 @@ pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv
 
-news_words.json
-sentense.json
-source_data.json
-stopword.json
-test.py
-word2vec.model
-words.json
+.DS_Store
+**/.DS_Store

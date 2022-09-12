@@ -10,14 +10,13 @@ class Robot():
         self.driver = driver
 
 
-    def get_article_max_offset(self, base_url:str):
+    def get_total_board_numbers(self, base_url:str):
 
         self.driver.get(f"{base_url}")
         self.driver.implicitly_wait(5)
         total_board_number = int(self.driver.find_element(By.XPATH, '//*[@id="jwxe_main_content"]/div[2]/div[2]/form[1]/fieldset/div/p/strong').text)
-        article_max_offset = total_board_number // 100 * 100
 
-        return article_max_offset
+        return total_board_number
 
     
     def get_all_board_url(self, base_url:str, saved_urls:dict, article_max_offset:int):
