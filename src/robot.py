@@ -4,6 +4,7 @@ from tqdm import tqdm
 from src.tool.selenium_context_manager import SeleniumContextManager
 from src.tool.json_file_manager import JsonFileManager
 
+
 class Robot():
 
     def __init__(self, driver) -> None:
